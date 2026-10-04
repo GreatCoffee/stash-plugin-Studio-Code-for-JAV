@@ -1,0 +1,59 @@
+/* Studio Code for JAV - CSS Styles */
+
+/*
+ * The badge is appended as a direct DOM child of .scene-card and pinned
+ * to the bottom-right corner of the card, on the same visual row as the
+ * popover icon buttons. It never intercepts mouse events.
+ */
+.scene-card .studio-code-for-jav {
+  position: absolute;
+  bottom: 0.35rem;
+  right: 0.7rem;
+  z-index: 1;
+
+  /* Match the font size of the scene card title (h5.card-section-title) */
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  max-width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  text-align: right;
+  color: #fff;
+  opacity: 0.9;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+  pointer-events: none; /* never block card clicks */
+}
+
+/* "(Unknown)" label styling */
+.scene-card .studio-code-for-jav.studio-code-unknown {
+  font-style: italic;
+  font-weight: 400;
+  opacity: 0.45;
+}
+
+/*
+ * List view: the injected column sits between the cover image column
+ * (td.cover_image-data) and the title column (td.title-data).
+ */
+.table-list th.scj-col-head {
+  white-space: nowrap;
+  width: 1%;
+}
+
+.table-list td.scj-col-data {
+  white-space: nowrap;
+  max-width: 14rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+/* "(Unknown)" styling in the list column */
+.table-list td.scj-col-data.studio-code-unknown {
+  font-style: italic;
+  opacity: 0.45;
+}

@@ -1,0 +1,5 @@
+# Stash
+stash.db
+*.db
+*.sqlite
+config.yml

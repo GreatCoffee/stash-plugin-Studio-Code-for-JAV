@@ -1,0 +1,12 @@
+id: StudioCodeForJAV
+name: Studio Code for JAV
+metadata:
+  description: Displays the Studio Code on scene cards (grid) and in a dedicated column (list). Shows the scene code if available, falls back to studio name, or displays (Unknown).
+version: 1.2.0
+date: "2026-10-04 22:51:00"
+requires: []
+source_repository: local
+files:
+- StudioCodeForJAV.yml
+- studioCodeForJAV.js
+- studioCodeForJAV.css
